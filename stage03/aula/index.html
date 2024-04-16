@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     <div class="page">
 
-        <section>
+        <header>
             <h1>
                 Crie e compartilhe
                 <br> 
@@ -21,64 +21,75 @@
                 <br> 
                 formulário de incrição.
             </p>
-        </section>
+        </header>
 
-        <form>
+        <form action="" method="">
 
-            <h1>Informações do evento</h1>
+            <fieldset>
 
-            <label for="fname">Título do evento:</label>
-            <br>
-            <input type="text" id="fname" name="fname">
-            <br>
+                <div class="fieldset-wrapper">               
+                    <legend>Informações do evento</legend>
 
-            <label for="lname">Link do evento</label>
-            <br>
-            <input type="text" id="lname" name="lname">
-            <br>
+                    <div class="input-wrapper">
+                        <label for="fname">Título do evento: <span>(mínimo 8 caracteres)</span> </label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="lname">Link do evento <span>(comece com https://)</span> </label>
+                        <input type="url" id="lname">
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <label for="lname">Whatsapp para contato <span>(somente números)</span></label>
+                        <input type="number" id="lname">
+                    </div>
 
+                    <div class="input-wrapper">
+                        <label for="lname">Informações extra</label>
+                        <textarea id="lname"> </textarea>
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <label for="cars">Categoria</label>
+                        <select name="cars" id="cars" form="carform">
+                            <option value="volvo">Tipo de evento</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
 
-            <label for="lname">Whatsapp para contato</label>
-            <br>
-            <input type="text" id="lname" name="lname">
-            <br>
+                <div class="fieldset-wrapper">
+                    <legend>Privacidade</legend>
 
-            <label for="lname">Informações extra</label>
-            <br>
-            <input type="text" id="lname" name="lname">
-            <br>
+                    <div class="input-wrapper">
+                        <label for="lname">Email do administrador <span>(digite um email válido)</span> </label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <label for="lname">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span> </label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <input type="radio" id="lname" name="lname">
+                        <label for="lname">Evento privado</label>
+                    </div>
+                </div>
 
-            <label for="cars">Categoria</label>
-            <select name="cars" id="cars" form="carform">
-                <option value="volvo">Tipo de evento</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-            </select>
-            <br>
+                <div class="fieldset-wrapper">
+                    <legend>Data e hora</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="lname">Data</label>
+                        <input type="datetime-local" id="lname" name="lname">
+                    </div>
+                </div>
 
-            <h1>Privacidade</h1>
-
-            <label for="lname">Email do administrador</label>
-            <br>
-            <input type="text" id="lname" name="lname">
-            <br>
-
-            <label for="lname">Senha de acesso para os participantes</label>
-            <br>
-            <input type="text" id="lname" name="lname">
-            <br>
-
-            <input type="radio" id="lname" name="lname">
-            <label for="lname">Evento privado</label>
-            <br>
-
-            <h1>Data e hora</h1>
-            
-            <label for="lname">Data</label>
-            <br>
-            <input type="datetime-local" id="lname" name="lname">
-            <br>
+            </fieldset>
 
             <div>
                 <button> 

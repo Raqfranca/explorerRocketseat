@@ -1,23 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, select, button, textarea{
+    font-family: "Poppins", sans-serif;
+}
 
 body{
     background-color: #E5E5E5;
 }
 
-section{
+body::before{
+    content: '';
+    width: 100%;
+    height: 360px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background-color: #121214;
 }
 
-section h1{
+header{
+    width: 736px;
+    margin: 80px auto 0;
+}
+
+header h1{
     font-family: "Archivo", sans-serif;
     color: #fff;
     font-size: 36px;
+    line-height: 32px;
     width: 700;
+
+    margin-bottom: 24px;
 }
 
-section p{
-    font-family: "Poppins", sans-serif;
+header p{
     color: #42D3FF;
     font-size: 16px;
 }
@@ -26,17 +50,79 @@ form{
     width: 736px;
     height: 1566px;
 
-    margin: auto;
+    margin: 42px auto 0;
     background-color: #fff;
     border-radius: 8px;
+
+    padding: 64px;
 }
 
-form h1{
+fieldset{
+    border: none;
+}
+
+fieldset legend{
     font-family: "Archivo", sans-serif;
     font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 16px;
 }
 
-form label{
-    font-family: "Poppins", sans-serif;
+fieldset label{
     font-size: 14px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label{
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #4E4958;  
+
+    margin-top: 8px;
+}
+
+.input-wrapper span{
+    margin-left: 12px;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #C1BCCC;  
+}
+
+.input-wrapper input, .input-wrapper textarea {
+    background: #FAFAFC;
+     
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+
+    height: 56px;
+    padding: 0 24px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #C1BCCC;
+}
+
+.input-wrapper textarea{
+
+    height: 168px;
+
+    padding: 0;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }

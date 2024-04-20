@@ -17,7 +17,7 @@ body{
 body::before{
     content: '';
     width: 100%;
-    height: 360px;
+    height: 455px;
 
     position: absolute;
     top: 0;
@@ -31,28 +31,54 @@ header{
     margin: 80px auto 0;
 
     color: #fff;
+    text-align: center;
 }
 
 header h1{
     font-family: "Staatliches", sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 60px;
     width: 400;
-
-    margin-bottom: 24px;
 }
 
 header p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
+    margin-bottom: 10px;
+}
+
+header img{
+    margin-bottom: 32px;
+}
+
+.header-div{
+    background-color: #F67669;
+
+    border-radius: 8px 8px 0 0;
+
+    width: 736px;
+    height: 137px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.header-div h1{
+    font-size: 24px;
+    font-family: "Staatliches", sans-serif;
+    color: #fff;
+
+    margin: auto;
 }
 
 form{
     width: 736px;
     
-    margin: 42px auto 0;
+    margin: auto;
     background-color: #fff;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0 0 8px 8px;
 
     padding: 64px;
 
@@ -132,35 +158,19 @@ fieldset label{
     margin-top: 16px;
 }
 
-footer{
-    background-color: #535971;
-
-    border-radius: 0 0 8px 8px;
-
-    width: 736px;
-    height: 136px;
-
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 auto 100px;
-
-    padding: 40px 64px;
-}
-
-footer button{
+button{
     height: 56px;
 
-    background: #FF5374;
+    background: #F67669;
 
     border: none;
-    border-radius: 20PX;
+    border-radius: 8PX;
 
     font-size: 20px;
     font-family: "Staatliches", sans-serif;
     color: #fff;
 }
 
-footer button:hover{
-    background: #be3e57;
+button:hover{
+    background: #be5b50;
 }

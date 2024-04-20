@@ -9,21 +9,20 @@
 <body>
     <div class="page">
         <header>
-            <h1>MENTORIA</h1>
+            <h1>avalie a sua mentoria</h1>
             <p>
-                Preencha a formulário abaixo para
-                <br> 
-                agendar a sua mentoria
+                Chegou a hora de avaliar o seu mentor. Bora lá?
             </p>
+            <img src="./img/img1.png" alt="">
         </header>
+
+        <div class="header-div">
+            <h1>INFORMAÇÕES PESSOAIS</h1>
+        </div>
 
         <form>
 
             <fieldset>
-                <div>
-                    <legend>INFORMAÇÕES PESSOAIS</legend>
-                </div>
-
                 <div class="input-wrapper">
                     <label for="name">Nome</label>
                     <input 
@@ -53,17 +52,6 @@
                         required
                     >
                 </div>
-
-                <div class="input-wrapper">
-                    <label for="password">Sennha <span>(mínimo 6 caracteres)</span> </label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password"
-                        required
-                        minlength="6"
-                    >
-                </div>
             </fieldset>
 
             <fieldset>
@@ -72,7 +60,7 @@
                 </div>
                 
                 <div class="input-wrapper">
-                    <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span> </label>
+                    <label for="mentor-name">Selecione quem foi o seu mentor</label>
                     <input 
                         type="text" 
                         id="mentor-name" 
@@ -80,39 +68,24 @@
                         required
                     >
                 </div>
+
+                <div class="input-wrapper">
+                    <label for="mentor-text">Feedback sobre o mentor</label>
+                    <input 
+                        type="text" 
+                        id="mentor-text" 
+                        name="mentor-text"
+                        required
+                    >
+                </div>
             </fieldset>
 
             <fieldset>
                 <div>
-                    <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+                    <legend>Agendando próxima mentoria</legend>
                 </div>
                 
                 <div class="input-wrapper">
-                    <h1>PRIMEIRA MENTORIA</h1>
-                    <label for="fist-data">Data <span>(DD/MM/AAAA)</span></label>
-                    <input 
-                        type="date" 
-                        id="fist-data" 
-                        name="fist-data"
-                    >
-
-                    <label for="fist-data">Das</label>
-                    <input 
-                        type="time" 
-                        id="fist-time" 
-                        name="fist-time"
-                    >
-
-                    <label for="fist-time-finish">Até</label>
-                    <input 
-                        type="time" 
-                        id="fist-time-finish" 
-                        name="fist-time-finish"
-                    >
-                </div>
-
-                <div class="input-wrapper">
-                    <h1>SEGUNDA MENTORIA</h1>
                     <label for="fist-data">Data <span>(DD/MM/AAAA)</span></label>
                     <input 
                         type="date" 
@@ -135,13 +108,10 @@
                     >
                 </div>
             </fieldset>
-        </form>
-
-        <footer class="form-button">
-            <button form="my-form"> 
+            <button> 
                 SALVAR
             </button>
-        </footer>
+        </form>
     </div>
 </body>
 </html>

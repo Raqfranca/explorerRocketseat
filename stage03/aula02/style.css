@@ -1,0 +1,13 @@
+body{
+    background-color: #ECE9FD;
+}
+
+.firts{
+    color: #7158EF;
+    font-size: 16px;
+}
+
+h1, li, span{
+    color: #090039;
+    font-size: 100px;
+}

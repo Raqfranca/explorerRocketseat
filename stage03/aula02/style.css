@@ -87,3 +87,24 @@ span{
     line-height: 8rem;
 }
 
+/* media queries */
+
+@media (min-width: 700px){
+
+    body{
+        padding-top: 8rem;
+    }
+
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem
+    }
+
+    li{
+        max-width: 450px;
+        gap: 5.3rem;
+        align-items: center;
+        margin-top: 3.2rem;
+    }
+}

@@ -13,7 +13,7 @@ body{
 }
 
 :root{
-    font-size: 62.5%; /*No lugar de ficar com 16px fica com 10px*/
+    font-size: 62.5%; /*No lugar de ficar com 16px fica com 10px np root*/
 }
 
 .firts{
@@ -30,14 +30,19 @@ h1, li, span{
 }
 
 h1{
-    font-size: 4rem;
     line-height: 4.8rem;
+    font-size: 4rem;
+    font-weight: 800;
+
+    margin-bottom: 1.8rem;
 }
 
 p{
-    font-size: 1.6rem;
     color: #0a0039ad;
+    font-size: 1.6rem;
     line-height: 3.2rem;
+
+    margin-bottom: 3.2rem;
 }
 
 a{
@@ -50,19 +55,29 @@ a:hover{
     color: rgb(39, 3, 196);
 }
 
-li{
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-    font-weight: 700;
-}
 
 ul {
-    margin-top: 7.2rem;
     list-style-type: none; 
+    
+    margin-top: 7.2rem;
+}
+
+li{
+    display: flex;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    align-items: center;
+
+    line-height: 3.2rem;
+    margin-top: 3.2rem;
 }
 
 span{
     font-size: 7.2rem;
-    line-height: 8rem;
     font-weight: 800;
+    line-height: 8rem;
+
+    margin-right: 3.8rem;
 }
+

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 5.3rem 3.7rem;
+
+    color: #A54328;
+    font-family: "Source Serif 4", serif;
+
+    background-image: url('https://s3-alpha-sig.figma.com/img/6597/0732/27b775104e016b33024ed903e8b6324f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kta4JOgQj4qqgWDfE2896u1KEpukFmbX-jYs6VznNV0MjVV0-38XRZHTgLhUm4Z8fl3orCFeqG5Af-ZEUJYIHpTxpoKqrejLpmUx1l72Gkf0-UXEdJcelprg4AAJA9JeLVxshRJqWzTtrrUssnHGVq7gxeQhIm5adHJYNaY1MFQjHSl-rq2WbkGjUYEbS~02P2t~EaZBzhjvBTeb0Y0zFWFSXT7Kqtg6PB6PWYQ~zxHt7KQnwbgJFwHQPwqd3LHr~et~gB4BvoPqWI4gQhZwhRYiRa-6apCRC40kn6AEAuEc7LlyKgnQ83Jd7A5wqd4KfNLV11RtpUYyszOsKdBnrw__');
+}
+
+:root{
+    font-size: 62.5%; 
+}
+
+main{
+    margin: auto;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    gap: 4.6rem;
+
+    width: 30.8rem;
+}
+
+h1{
+    font-size: 2.8rem;
+    width: 700;
+    margin: 0;
+}
+
+p{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+
+.ingredients{
+    width: 30.8rem;
+
+    margin-top: 3.4rem;
+}
+
+.ingredients h1{
+    margin-bottom: 3.6rem;
+}
+
+ul, ol{
+    list-style-type: none;
+
+    margin-bottom: 1.7rem;
+}
+
+strong{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+li{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+button{
+    padding: 11.34px;
+    
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    background-color: #A54328;
+    color: white;
+    border: none;
+    border-radius: 5.67px;
+}
+
+
+@media (min-width: 800px){
+
+    main{
+        max-width: 1020px;
+        display: flex;
+        gap: 18.9rem;
+    }
+    
+    .recipe{    
+        width: 43.5rem;
+    }
+
+    .ingredients{
+        width: 52.5rem;
+        height: 55.7rem;
+        margin-top: 0;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    
+    p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    strong{
+        font-size: 2rem;
+    }
+    
+    li{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    button{
+        padding: 1.6rem;
+        
+        font-size: 1.4rem;
+    
+        background-color: #A54328;
+
+        border: none;
+        border-radius: 8px;
+    }
+}

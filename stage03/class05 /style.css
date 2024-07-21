@@ -1,0 +1,126 @@
+body{
+    background-color: #392467;
+}
+
+.square-pink{
+    background-color: #FFD1E3;
+    height: 200px;
+    width: 200px;
+
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*
+DESAFIO 01 - Faça o quadrado ir de um lado para o outro na página
+*/
+
+@keyframes move{
+    /* from*/
+    0%{
+    }
+
+    /*to*/
+    100%{
+        transform: translateX(calc(100vw - 100% - 32px));
+    }
+
+}
+
+/*
+DESAFIO 02 
+- Reverter a animação: Resposta incluir só o animation-direction: reverse;
+- Deixar em infinito indo e voltando
+
+Explicação: 
+    animation-direction: alternate; a animação fica altenando a direção
+    animation-iteration-count: infinite; aqui é onde eu falo quantas vezes deve repitir 
+
+    outra forma de fazer ela ir e voltar e colocando a % em 50.
+    
+    Porque ela vai iniciar parada, vai fazer a animação e depois volta para o ponto iniciar. 
+    
+    como o meio está sendo o pedido para ela ir até o final da tela, acontece a movimentação desejada. 
+
+    50%{
+        transform: translateX(calc(100vw - 100% - 32px));
+    }
+*/
+
+.square-orange{
+    background-color: #FFC7C7;
+    height: 200px;
+    width: 200px;
+
+    margin-top: 20px;
+
+    animation-name: newMove;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes newMove{
+    /*to*/
+    100%{
+        transform: translateX(calc(100vw - 100% - 32px));
+    }
+
+}
+
+/*
+DESAFIO 03 - Fazer a animação esperar 3s para iniciar 
+- Para o delay se usa: animation-delay 
+- Para modificar a forma que a animação faz o percurso podemos usar o: animation-timing-function: ease-in;
+*/
+
+.square-blue{
+    background-color: #CAEDFF;
+    height: 200px;
+    width: 200px;
+
+    margin-top: 20px;
+
+    animation-name: blueMove;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes blueMove{
+    /*to*/
+    100%{
+        transform: translateX(calc(100vw - 100% - 32px));
+    }
+
+}
+
+/*
+DESAFIO 04 
+Quando o mousse passar pelo quadrado a animação deve parar
+*/
+
+.square-green{
+    background-color: #D4E2D4;
+    height: 200px;
+    width: 200px;
+
+    margin-top: 20px;
+
+    animation-name: greenMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.square-green:hover{
+    animation-play-state: paused;
+}
+
+@keyframes greenMove{
+    /*to*/
+    50%{
+        transform: translateX(calc(100vw - 100% - 32px));
+    }
+
+}

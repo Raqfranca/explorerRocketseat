@@ -108,9 +108,17 @@ Quando o mousse passar pelo quadrado a animação deve parar
 
     margin-top: 20px;
 
-    animation-name: greenMove;
-    animation-duration: 4s;
+/*
+    animation-name: greenMove, blink;
+    animation-duration: 4s, 200ms;
     animation-iteration-count: infinite;
+    animation-timing-function: steps(10); 
+*/
+
+/* Shorthand p/ animação */
+
+animation: greenMove 4s alternate infinite steps(10), blink 200ms infinite ;
+
 }
 
 .square-green:hover{
@@ -123,4 +131,10 @@ Quando o mousse passar pelo quadrado a animação deve parar
         transform: translateX(calc(100vw - 100% - 32px));
     }
 
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0.5;
+    }
 }
